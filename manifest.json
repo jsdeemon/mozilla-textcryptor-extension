@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Text Cryptor",
+    "description": "Encrypts and decrypts text",
+    "homepage_url": "https://github.com/jsdeemon",
+    "version": "0.0.1",
+    "author": "Dmitry Safarov",
+    "browser_action": {
+        "default_title": "Text Cryptor",
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+ 
+        "content_scripts": [ {
+            "matches": ["<all_urls>"],
+            "js": ["aes.js", "cryptor.js"]
+          } ],
+    "permissions": ["activeTab"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "textcrypt",
+  "version": "1.0.0",
+  "description": "Text cryptor extension for Mozilla Firefox",
+  "main": "aes.js",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./"
+  },
+  "keywords": [],
+  "author": "Dmitry",
+  "license": "ISC",
+  "devDependencies": {
+    "web-ext": "^6.6.0"
+  }
+}
